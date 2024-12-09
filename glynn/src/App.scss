@@ -1,61 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-$primaryFont: 'Montserrat', sans-serif;
-h1, h2, h3, h4, h5, h6{
-    margin: unset;
-    font-weight: unset !important;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+$primaryFont: "Montserrat", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+  font-weight: unset !important;
 }
-section
-{
-    height: 100vh;
-    font-family: $primaryFont;
+section {
+  height: 100vh;
+  font-family: $primaryFont;
+  display: flex;
+  justify-content: center;
+}
+.btn-primary {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid rgb(255, 255, 255) !important;
+}
+.landingPage {
+//   background: url("/bg.png") no-repeat center center;
+background-color: #000B58;
+  color: #fff;
+  box-shadow: 0px 5px 11px 2px rgba(0,0,0,0.75) !important;
+  z-index: 99;
+  position: relative;
+  .headerBlock {
+    background-color: #000B58;
     display: flex;
-    justify-content: center;
-}
-.btn-primary{
-    background-color: transparent !important;
-    color: #ffffff !important;
-    border: 2px solid rgb(255, 255, 255) !important;
-}
-.landingPage{
-    background-color: #789DBC;
-    color: #fff;
-    .headerBlock{
-        background-color: #789DBC;
-        display: flex;
-        flex-direction: row;
-        height: inherit;
-        max-width: 1350px;
-        width: 100%;
-        .headerDescription{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-            justify-content: center;
-            .introduction{
-                font-size: 30px;
-                b{
-                    font-weight: 700 !important;
-                    font-size: 40px;
-                    color:#FBFBFB;
-                }
-            }
+    flex-direction: row;
+    height: inherit;
+    max-width: 1550px;
+    width: 100%;
+    .headerDescription {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      .introduction {
+        font-size: 30px;
+        b {
+          font-weight: 700 !important;
+          font-size: 50px;
+          color: #fbfbfb;
         }
-        .headerImage{
-            width: 100%;
-        }
+      }
     }
+    .headerImage {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 50px 50px 0 0;
+      margin-top: 10vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: end;
+      img{
+        width: 80%;
+      }
+    }
+  }
 }
 
-
-.footerSection{
-    padding: 20px 0;
-    height: auto;
+.footerSection {
+  padding: 20px 0;
+  height: auto;
 }
 
-.aboutSection{
-    background-color: #1e90ff;
+.aboutSection {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .contentDisplay {
+    width: 100%;
+    .introductory {
+      b {
+        font-size: 70px;
+      }
+      .content {
+        font-size: 25px;
+        text-indent: 50px;
+        margin-top: 20px;
+        text-align: justify;
+        padding: 40px 80px 0 0px;
+        line-height: 1.5;
+      }
+    }
+  }
+  .imageDisplay {
+    width: 70%;
+  }
 }
-.projectSection{
-    background-color: aqua;
+.projectSection {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
